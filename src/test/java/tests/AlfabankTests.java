@@ -1,7 +1,6 @@
 package tests;
 
 import helpers.DriverUtils;
-import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -40,7 +39,7 @@ public class AlfabankTests extends TestBase {
     }
 
     @Test
-    @Description("Поиск заголовка 'Популярные продукты'")
+    @DisplayName("Поиск заголовка 'Популярные продукты'")
     void checkHeading() {
         step("Открытие страницы 'https://alfabank.ru/'", () ->
                 open("https://alfabank.ru/"));
@@ -51,7 +50,7 @@ public class AlfabankTests extends TestBase {
     }
 
     @Test
-    @Description("Переход на страницу 'О банке'")
+    @DisplayName("Переход на страницу 'О банке'")
     void checkOpenPage() {
         step("Открытие страницы 'https://alfabank.ru/'", () ->
                 open("https://alfabank.ru/"));
@@ -68,7 +67,7 @@ public class AlfabankTests extends TestBase {
     }
 
     @Test
-    @Description("Переход на страницу 'Кредит на ремонт квартиры'")
+    @DisplayName("Переход на страницу 'Кредит на ремонт квартиры'")
     void checkOpenPageCredit() {
         step("Открытие страницы 'https://alfabank.ru/'", () ->
                 open("https://alfabank.ru/"));
